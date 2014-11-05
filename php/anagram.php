@@ -10,6 +10,6 @@
 	}
 	
 	function string_sum( $str ) {
-		return array_sum( array_map( 'ord', str_split( $str ) ) );
+		return array_sum( array_map( 'ord', str_split( strtolower( $str ) ) ) );
 	}
 ?>
