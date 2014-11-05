@@ -1,0 +1,10 @@
+<script src="anagram.js"></script>
+<script>
+	var list = [ "cat", "Tac", "bat", "tab" ];
+	
+	for( var t=0; t < list.length; t++ ) {
+		for( var i=t+1; i < list.length; i++ ) {
+			console.log( 'Comparing ' + list[t] + ' to ' + list[i] + ': ' + (anagram_compare( list[t], list[i] ) ? 'Anagram!' : 'nope' ) );
+		}
+	}	
+</script>
